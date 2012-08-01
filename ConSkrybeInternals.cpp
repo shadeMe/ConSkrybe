@@ -4,8 +4,8 @@
 IDebugLog						gLog("ConSkrybe.log");
 PluginHandle					g_pluginHandle = kPluginHandle_Invalid;
 
-_DefineHookHdlr(ConsoleExecuteCommandCallback, 0x00841198);
-_DefineHookHdlr(ConsolePrintHandler, 0x00842848);
+_DefineHookHdlr(ConsoleExecuteCommandCallback, 0x0083F748);
+_DefineHookHdlr(ConsolePrintHandler, 0x00840DF8);
 
 void StartSkrybing()
 {
@@ -30,8 +30,8 @@ void __stdcall ConsoleSiphon(const char* SiphonedText, bool UserInput)
 #define _hhName	ConsoleExecuteCommandCallback
 _hhBegin()
 {
-	_hhSetVar(Retn, 0x0084119D);
-	_hhSetVar(Call, 0x005113F0);
+	_hhSetVar(Retn, 0x0083F74D);
+	_hhSetVar(Call, 0x005116F0);
 	__asm
 	{
 		pushad
@@ -48,8 +48,8 @@ _hhBegin()
 #define _hhName	ConsolePrintHandler
 _hhBegin()
 {
-	_hhSetVar(Retn, 0x0084284D);
-	_hhSetVar(Call, 0x00F4A171);
+	_hhSetVar(Retn, 0x00840DFD);
+	_hhSetVar(Call, 0x00F07511);
 	__asm
 	{
 		call	[_hhGetVar(Call)]
