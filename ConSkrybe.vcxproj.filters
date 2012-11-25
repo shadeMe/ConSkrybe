@@ -2,31 +2,7 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <ClCompile Include="Main.cpp" />
-    <ClCompile Include="..\SKSE\skse\GameAPI.cpp">
-      <Filter>SKSE</Filter>
-    </ClCompile>
-    <ClCompile Include="..\SKSE\skse\GameFormComponents.cpp">
-      <Filter>SKSE</Filter>
-    </ClCompile>
-    <ClCompile Include="..\SKSE\skse\GameForms.cpp">
-      <Filter>SKSE</Filter>
-    </ClCompile>
-    <ClCompile Include="..\SKSE\skse\GameObjects.cpp">
-      <Filter>SKSE</Filter>
-    </ClCompile>
-    <ClCompile Include="..\SKSE\skse\GamePathing.cpp">
-      <Filter>SKSE</Filter>
-    </ClCompile>
-    <ClCompile Include="..\SKSE\skse\GameReferences.cpp">
-      <Filter>SKSE</Filter>
-    </ClCompile>
     <ClCompile Include="..\SKSE\skse\GameRTTI.cpp">
-      <Filter>SKSE</Filter>
-    </ClCompile>
-    <ClCompile Include="..\SKSE\skse\GameSettings.cpp">
-      <Filter>SKSE</Filter>
-    </ClCompile>
-    <ClCompile Include="..\SKSE\skse\GameTypes.cpp">
       <Filter>SKSE</Filter>
     </ClCompile>
     <ClCompile Include="..\SKSE\skse\Utilities.cpp">
@@ -36,6 +12,9 @@
       <Filter>Utilities</Filter>
     </ClCompile>
     <ClCompile Include="ConSkrybeInternals.cpp" />
+    <ClCompile Include="..\SKSE\skse\GameAPI.cpp">
+      <Filter>SKSE</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\SKSE\skse\GameAPI.h">

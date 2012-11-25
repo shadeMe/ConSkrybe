@@ -18,3 +18,12 @@ _DeclareMemHdlr(ConsoleExecuteCommandCallback, "if you're Vorians and you're rea
 _DeclareMemHdlr(ConsolePrintHandler, "more spurious hackery");
 
 void StartSkrybing(void);
+
+bool ToggleConsoleOutput(void* paramInfo,
+						void * arg1,
+						TESObjectREFR* thisObj,
+						UInt32 arg3,
+						Script* scriptObj,
+						void* eventList,
+						double* result,
+						UInt32* opcodeOffsetPtr);
