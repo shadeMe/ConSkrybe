@@ -15,6 +15,15 @@
     <ClCompile Include="..\SKSE\skse\GameAPI.cpp">
       <Filter>SKSE</Filter>
     </ClCompile>
+    <ClCompile Include="..\SKSE\skse\GameData.cpp">
+      <Filter>SKSE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SKSE\skse\GameObjects.cpp">
+      <Filter>SKSE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SKSE\skse\NiNodes.cpp">
+      <Filter>SKSE</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\SKSE\skse\GameAPI.h">

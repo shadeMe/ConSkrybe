@@ -7,10 +7,10 @@ PluginHandle					g_pluginHandle = kPluginHandle_Invalid;
 static const char*				kToggleConSkrybeCommandName = "ToggleSkrybing";
 static bool						g_EnableSkrybing = true;
 
-_DefineHookHdlr(ConsoleExecuteCommandCallback, 0x00847758);
-_DefineHookHdlr(ConsolePrintHandler, 0x00848E08);
-_DefinePatchHdlr(ToggleCmdAlias, 0x0124CE6C);
-_DefinePatchHdlr(ToggleCmdHandler, 0x0124CE80);
+_DefineHookHdlr(ConsoleExecuteCommandCallback, 0x008470B8);
+_DefineHookHdlr(ConsolePrintHandler, 0x00848768);
+_DefinePatchHdlr(ToggleCmdAlias, 0x0124DCCC);
+_DefinePatchHdlr(ToggleCmdHandler, 0x0124DCE0);
 
 void StartSkrybing()
 {
@@ -37,8 +37,8 @@ void __stdcall ConsoleSiphon(const char* SiphonedText, bool UserInput)
 #define _hhName	ConsoleExecuteCommandCallback
 _hhBegin()
 {
-	_hhSetVar(Retn, 0x0084775D);
-	_hhSetVar(Call, 0x00513950);
+	_hhSetVar(Retn, 0x008470BD);
+	_hhSetVar(Call, 0x00514420);
 	__asm
 	{
 		pushad
@@ -55,8 +55,8 @@ _hhBegin()
 #define _hhName	ConsolePrintHandler
 _hhBegin()
 {
-	_hhSetVar(Retn, 0x00848E0D);
-	_hhSetVar(Call, 0x00F51831);
+	_hhSetVar(Retn, 0x0084876D);
+	_hhSetVar(Call, 0x00F52661);
 	__asm
 	{
 		call	_hhGetVar(Call)
